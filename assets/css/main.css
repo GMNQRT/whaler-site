@@ -111,7 +111,7 @@ margin-left: -15px;
 }
 
 .modal-footer {
-	background: #2b2b2b;
+	background: #333;
 }
 
 
@@ -338,7 +338,7 @@ a:after {
 }
 
 #footerwrap {
-	background: #2b2b2b;
+	background: #333;
 	margin-top: 0px;
 	padding-top: 40px;
 	padding-bottom: 20px;
@@ -561,7 +561,7 @@ a:after {
    ========================================================================== */
 
 .blog-bg {
-	background: #2b2b2b;
+	background: #333;
 	padding-right: 0px;
 	padding-left: 0px;
 	
@@ -573,8 +573,8 @@ a:after {
 }
 
 .blog-bg h5 {
-	color: #dadada;
-	font-size: 11px;
+    color: #dadada;
+    font-size: 11px;
 }
 
 .blog-content {
