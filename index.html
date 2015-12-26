@@ -1,668 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="WebSite for whaler">
-	<meta name="author" content="Quentin BALCEREK">
-	<title>Whaler WebSite</title>
-	<link rel="stylesheet" type='text/css' href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type='text/css' href="assets/css/main.css">
-	<link rel="stylesheet" type='text/css' href="assets/css/icomoon.css">
-	<link rel="stylesheet" type='text/css' href="assets/css/animate-custom.css">
-	<link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic'>
-	<link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400,300,700'>
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.min.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-      <![endif]-->
-  </head>
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
-  	<div id="navbar-main">
-  		<div class="navbar navbar-inverse navbar-fixed-top">
-  			<div class="container">
-  				<div class="navbar-header">
-  					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-  						<span class="icon icon-menu" style="font-size:30px; color:#3498db;"></span>
-  					</button>
-  					<a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-home" style="font-size:18px; color:#3498db;"></span></a>
-  				</div>
-  				<div class="navbar-collapse collapse">
-  					<ul class="nav navbar-nav">
-  						<li><a href="#home" class="smoothScroll">Home</a></li>
-  						<li> <a href="#about" class="smoothScroll"> About</a></li>
-  						<li> <a href="#services" class="smoothScroll"> Services</a></li>
-  						<li> <a href="#team" class="smoothScroll"> Team</a></li>
-  						<li> <a href="#blog" class="smoothScroll"> Blog</a></li>
-  						<li> <a href="#contact" class="smoothScroll"> Contact</a></li>
-  					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple, elegant and intutive user interface for Docker">
+  <title>Whaler</title>
 
-  		<!-- ==== HEADERWRAP ==== -->
-  		<div id="headerwrap" id="home" name="home">
-  			<header class="clearfix">
-  				<h1><img src="assets/img/logo.png"></h1>
-  				<p>Whaler</p>
-  				<p>The hunt is on!</p>
-  			</header>	    
-  		</div><!-- /headerwrap -->
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Whaler CSS -->
+  <link href="css/whaler.css" rel="stylesheet">
 
-  		<!-- ==== GREYWRAP ==== -->
-  		<div id="greywrap">
-  			<div class="row">
-  				<div class="col-lg-4 callout">
-  					<span class="icon icon-stack"></span>
-  					<h2>Whaler API</h2>
-            <p>The API behind The Whaler UI.</p>
-            <p><a target="_blank" href="https://github.com/GMNQRT/whaler-api">Read more</a></p>
-  				</div><!-- col-lg-4 -->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
 
-  				<div class="col-lg-4 callout">
-  					<span class="icon icon-eye"></span>
-  					<h2>Whaler UI</h2>
-  					<p>This project exposes a friendly user interface to the Whaler API, and is one of the components used by Whaler main project.</p>
-            <p><a target="_blank" href="https://github.com/GMNQRT/whaler-ui">Read more</a></p>
-  				</div><!-- col-lg-4 -->	
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="images/ico/favicon.png">
+  <script src="js/pace.js"></script>
+  <!-- Custom Google Font : Open Sans -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+</head>
+<body class="web-app">
+  <div class="preloader"></div>
+  <!-- Header Starts -->
+  <header id="top" class="masthead" role="main">
+    <div class="container">
+      <!-- Whaler Logo -->
+      <div class="logo breath"> <a href="#"><img src="images/startup-template-logo.png" alt="whaler-logo" class="img-responsive"></a> </div>
+      <!-- Hero Title -->
+      <h1>The Most <span data-typer-targets="Easy,Effective,Friendly,Simple">Simple</span> and <strong>Powerful Way</strong> <br>
+        to <strong>start</strong> with Docker</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <img src="images/web-app-banner.png" alt="Web App Banner" class="img-responsive">
+          <!-- <iframe id="introvid" width="696" height="518" src="https://www.youtube.com/embed/3JZ4pnNtyxQ" frameborder="0" allowfullscreen></iframe> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- // Header Ends -->
 
-  				<div class="col-lg-4 callout">
-  					<span class="icon icon-bars-2"></span>
-  					<h2>Whaler Logs</h2>
-  					<p>A small UDP server for syslog and Whaler. This server waits syslog messages and broadcast them by websockets.</p>
-            <p><a target="_blank" href="https://github.com/GMNQRT/whaler-logs">Read more</a></p>
-  				</div><!-- col-lg-4 -->	
-  			</div><!-- row -->
-  		</div><!-- greywrap -->
+  <!-- Main -->
+  <main id="explore">
+    <div class="section-title">
+      <h2>Easily manage your containers and images</h2>
+      <h4>Simple, elegant and intutive user interface</h4>
+    </div>
+    <section class="row heroimg breath">
+      <div class="col-xs-6 hero-content" id="real-estate">
+        <div class="device device-browser">
+          <div class="device-details"></div>
+          <div class="browser-bar">
+            <div class="pin pin-left">
+              <span class="glyphicon glyphicon-arrow-left quiet"></span>
+              <span class="glyphicon glyphicon-arrow-right quiet"></span>
+              <span class="glyphicon glyphicon-repeat quiet"></span>
+            </div>
+            <div class="pin pin-right">
+              <span class="glyphicon glyphicon-heart quiet"></span>
+              <span class="glyphicon glyphicon-menu-hamburger quiet"></span>
+            </div>
+          </div>
+          <div class="browser-content">
+            <img src="images/heroimg-1.jpg" alt="flat-mockup-template">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 hero-content">
+        <div class="descs breath">
+          <p class="desc breath">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p class="desc breath">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p class="desc breath">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+      </div>
+    </section>
+    <section class="row heroimg breath">
+      <div class="col-xs-6 hero-content">
+        <div class="descs breath">
+          <p class="desc breath">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p class="desc breath">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <p class="desc breath">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+      </div>
+      <div class="col-xs-6 hero-content">
+        <div class="device device-browser">
+          <div class="device-details"></div>
+          <div class="browser-bar">
+            <div class="pin pin-left">
+              <span class="glyphicon glyphicon-arrow-left quiet"></span>
+              <span class="glyphicon glyphicon-arrow-right quiet"></span>
+              <span class="glyphicon glyphicon-repeat quiet"></span>
+            </div>
+            <div class="pin pin-right">
+              <span class="glyphicon glyphicon-heart quiet"></span>
+              <span class="glyphicon glyphicon-menu-hamburger quiet"></span>
+            </div>
+          </div>
+          <div class="browser-content">
+            <img src="images/heroimg-2.jpg" alt="flat-mockup-template">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  		<!-- ==== ABOUT ==== -->
-  		<div class="container" id="about" name="about">
-  			<div class="row white">
-  				<br>
-  				<h1 class="centered">WHAT IS THE WHALER PROJECT?</h1>
-  				<hr>
-  				<div class="col-lg-offset-3 col-lg-6">
-  					<p>WHALER is an brand new interface for Docker. With Whaler you can manage your docks as you want. Know, you will not have to expend more time to understand Docker, we do this for you, and you have just to trust us. Everything will be ok.</p>
-  				</div><!-- col-lg-6 -->
-  			</div><!-- row -->
-  		</div><!-- container -->
+    <div id="features" class="container">
+      <!-- Features Section -->
+      <div class="section-title">
+        <h2>Some great features of Whaler</h2>
+        <h4>With our advanced features, you'll fall in love with</h4>
+      </div>
+      <section class="row features">
+        <!-- Feature 01 -->
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail"> <img src="images/flat-feature-icon-1.png" alt="analytics-icon">
+            <div class="caption">
+              <h3>Advanced analytics</h3>
+              <p>Browse and analyze detailed statistics of each of your containers and images. </p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 02 -->
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail"> <img src="images/flat-feature-icon-2.png" alt="analytics-icon">
+            <div class="caption">
+              <h3>Realtime Loging</h3>
+              <p>Watch your container logs in realtime directly on your web browser. </p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 03 -->
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail"> <img src="images/flat-feature-icon-3.png" alt="analytics-icon">
+            <div class="caption">
+              <h3>Easy to setup</h3>
+              <p>No code required. Just follow instructions on screen to setting it up. </p>
+            </div>
+          </div>
+        </div>
+        <!-- Feature 04 -->
+        <div class="col-sm-6 col-md-3">
+          <div class="thumbnail"> <img src="images/flat-feature-icon-4.png" alt="analytics-icon">
+            <div class="caption">
+              <h3>Quickly build App</h3>
+              <p>Build complex applications by dragging and dropping components you need. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // Features Section Ends -->
+    </div>
+  </main>
+  <!-- // Main Ends -->
 
-  		<!-- ==== SECTION DIVIDER1 -->
-  		<section  id="services" name="services" class="section-divider textdivider divider1 banner">
-  			<div class="container">
-  				<h1>BY USERS</h1>
-  				<hr>
-  				<p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
-  			</div><!-- container -->
-  		</section><!-- section -->
+  <!-- Grey Highlight Section -->
+  <div class="highlight testimonials">
+    <div class="container">
+      <!-- Testimonials -->
+      <div class="section-title">
+        <h2>What our users said</h2>
+        <h4>Don't take our word. See our testimonials </h4>
+      </div>
+      <section class="row breath">
+        <div class="col-md-6">
+          <div class="testblock">Whaler is really a great interface to get strarted with Docker. With its awesome features and easy usage. This application made my day. Very recommended.</div>
+          <div class="clientblock"> <img src="images/user-img-1.jpg" alt="Sébastien Le Querec">
+            <p><strong>Sébastien Le Querec</strong> <br>
+              Student at <a href="http://www.etna-alternance.net/" target="_blank">Etna</a></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="testblock">I like this application very much. easy to use and perfect support. This is the finest Docker's interface I've ever seen. Its minimal, Flat and responsive too. I'm really happy with their service.</div>
+          <div class="clientblock"> <img src="images/user-img-2.jpg" alt="Yann Kerfendal">
+            <p><strong>Yann Kerfendal</strong> <br>
+              Front-end Developer at <a href="http://www.midrange-ingenierie-numerique.fr/fr/" target="_blank">MIDRANGE</a></p>
+          </div>
+        </div>
+      </section>
+      <!-- // End Testimonials -->
+    </div>
+  </div>
+  <!-- // End Grey Highlight Section -->
 
+  <!-- FAQ -->
+  <div id="faq" class="container">
+    <div class="section-title">
+      <h2>One for all. All for one</h2>
+      <h4>Three GitHub projects for one great product. </h4>
+    </div>
+    <section class="row breath planpricing">
+      <a href="https://github.com/GMNQRT/whaler-ui" target="_blank" class="col-md-4">
+        <div class="pricing color1">
+          <div class="planname">Whaler UI</div>
+          <div class="billing">The friendly user interface to the Whaler API.</div>
+        </div>
+      </a>
+      <a href="https://github.com/GMNQRT/whaler-api" target="_blank" class="col-md-4">
+        <div class="pricing color2">
+          <div class="planname">Whaler API</div>
+          <div class="billing">The API which interacts directly with your Docker daemon.</div>
+        </div>
+      </a>
+      <a href="https://github.com/GMNQRT/whaler-logs" target="_blank" class="col-md-4">
+        <div class="pricing color3">
+          <div class="planname">Whaler Logs</div>
+          <div class="billing">A small UDP server to redirect syslog to Whaler API</div>
+        </div>
+      </a>
+    </section>
 
-  		<!-- ==== SERVICES ==== -->
-  		<div class="container">
-  			<br>
-  			<br>
-  			<div class="row">
-  				<h2 class="centered">ONE BRAND, ONE VOICE.</h2>
-  				<hr>
-  				<br>
-  				<div class="col-lg-offset-2 col-lg-8">
-  					<p>Employees and consumers. Two halves of a brand’s entirety, the whole of a brand’s audience. Sometimes these two halves have very different viewpoints, creating a weak spot in the brand story. Weakness tarnishes credibility. Brands that aren’t credible aren’t viable.
-  					</p>
-  					<p>We squash weakness by designing the whole brand story. It’s crafted around the truism held by employees and consumers to create an experience that connects from the inside out.</p>
-  					<p>By being true to the brand we represent, we elevate the audiences’ relationship to it. Like becomes love becomes a passion. Passion becomes advocacy. And we see the brand blossom from within, creating a whole story the audience embraces. That’s when the brand can truly flex its muscles.</p>
-  				</div><!-- col-lg -->
-  			</div><!-- row -->
+    <div class="section-title">
+      <h5>Frequently Asked Questions</h5>
+    </div>
+    <section class="row faq breath">
+      <div class="col-md-6">
+        <h6>How much does it cost ?</h6>
+        <p>Nothing. Whaler is 100% free and does not require credit card information to start. It's an open source project and you can contribute to help it's development on our github repository.</p>
+        <h6>Can I manage many Docker servers with only one instance of Whaler  ?</h6>
+        <p>Not at the moment. We currently working on this feature. We want that Whaler be able to switch between server directly inside the application. Stay tuned.</p>
+      </div>
+      <div class="col-md-6">
+        <h6>What do i need to make it works ?</h6>
+        <p>You only need one computer with a running Docker server or getting access to a remote one. Thanks to Docker Whaler is totally cross platform, it will load and install all required functional dependencies.</p>
+        <h6>Why the whale on the Whaler logo has such big teeth ?</h6>
+        <p>Although she is very happy, the white part at the bottom of his head is not his teeth. It's just the white part of his belly !.</p>
+      </div>
+    </section>
+  </div>
+  <!-- // End FAQ -->
 
-  			<div class="row">
-  				<h2 class="centered">UI FIRST THINKING, ALWAYS.</h2>
-  				<hr>
-  				<br>
-          <div class="col-lg-6">
-            <img class="img-responsive" src="assets/img/vitrine/vitrine1.png" alt="">
-          </div><!-- col -->
-          <div class="col-lg-6">
-            <img class="img-responsive" src="assets/img/vitrine/vitrine2.png" alt="">
-          </div><!-- col -->
-  			</div><!-- row -->
-  		</div><!-- container -->
-  		
+  <!-- Team -->
+  <div id="team" class="container">
+    <div class="section-title">
+      <h2>You are in a good company</h2>
+      <h4>Made with love by this awesome band. </h4>
+    </div>
+    <section class="row clientlogo text-center breath">
+        <div class="clientblock">
+          <img src="images/team/matthieu.jpg" alt="Matthieu Clor">
+          <p><strong>Matthieu Clor</strong> <br>
+            Marketing manager</p>
+          <a href="https://twitter.com/matthieuclor" target="_blank">
+            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 182.66667 150.66667"><defs id="defs6"><clipPath id="clipPath20" clipPathUnits="userSpaceOnUse"><path id="path18" d="m0 10.012h1366.9v1110.9h-1366.9z"/></clipPath></defs><g id="g10" transform="matrix(1.3333 0 0 -1.3333 0 150.67)"><g id="g12" transform="scale(.1)"><g id="g16" clip-path="url(#clipPath20)"><path id="path22" d="m1366.9 989.39c-50.27-22.309-104.33-37.387-161.05-44.18 57.89 34.723 102.34 89.679 123.28 155.15-54.18-32.15-114.18-55.47-178.09-68.04-51.13 54.49-124.02 88.55-204.68 88.55-154.89 0-280.43-125.55-280.43-280.43 0-21.988 2.457-43.398 7.258-63.91-233.08 11.68-439.72 123.36-578.04 293.01-24.141-41.4-37.969-89.567-37.969-140.97 0-97.308 49.489-183.13 124.76-233.44-45.969 1.437-89.218 14.058-127.03 35.078-0.043-1.18-0.043-2.348-0.043-3.52 0-135.9 96.68-249.22 224.96-275-23.512-6.41-48.281-9.8-73.86-9.8-18.089 0-35.628 1.711-52.781 5 35.711-111.41 139.26-192.5 262-194.77-96.058-75.23-216.96-120.04-348.36-120.04-22.621 0-44.961 1.332-66.918 3.91 124.16-79.568 271.55-125.98 429.94-125.98 515.82 0 797.86 427.31 797.86 797.93 0 12.153-0.28 24.223-0.79 36.25 54.77 39.571 102.31 88.95 139.93 145.2" fill="#55ACEE"/></g></g></g></svg>
+          </a>
+        </div>
+        <div class="clientblock">
+          <img src="images/team/quentin.jpg" alt="Quentin Balcerek" class="img-circle">
+          <p><strong>Quentin Balcerek</strong> <br>
+            Back-end developer</p>
+          <a href="https://twitter.com/QuentinBALCEREK" target="_blank">
+            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 182.66667 150.66667"><defs id="defs6"><clipPath id="clipPath20" clipPathUnits="userSpaceOnUse"><path id="path18" d="m0 10.012h1366.9v1110.9h-1366.9z"/></clipPath></defs><g id="g10" transform="matrix(1.3333 0 0 -1.3333 0 150.67)"><g id="g12" transform="scale(.1)"><g id="g16" clip-path="url(#clipPath20)"><path id="path22" d="m1366.9 989.39c-50.27-22.309-104.33-37.387-161.05-44.18 57.89 34.723 102.34 89.679 123.28 155.15-54.18-32.15-114.18-55.47-178.09-68.04-51.13 54.49-124.02 88.55-204.68 88.55-154.89 0-280.43-125.55-280.43-280.43 0-21.988 2.457-43.398 7.258-63.91-233.08 11.68-439.72 123.36-578.04 293.01-24.141-41.4-37.969-89.567-37.969-140.97 0-97.308 49.489-183.13 124.76-233.44-45.969 1.437-89.218 14.058-127.03 35.078-0.043-1.18-0.043-2.348-0.043-3.52 0-135.9 96.68-249.22 224.96-275-23.512-6.41-48.281-9.8-73.86-9.8-18.089 0-35.628 1.711-52.781 5 35.711-111.41 139.26-192.5 262-194.77-96.058-75.23-216.96-120.04-348.36-120.04-22.621 0-44.961 1.332-66.918 3.91 124.16-79.568 271.55-125.98 429.94-125.98 515.82 0 797.86 427.31 797.86 797.93 0 12.153-0.28 24.223-0.79 36.25 54.77 39.571 102.31 88.95 139.93 145.2" fill="#55ACEE"/></g></g></g></svg>
+          </a>
+        </div>
+        <div class="clientblock">
+          <img src="images/team/nicolas.jpg" alt="Nicolas Miannay" class="img-circle">
+          <p><strong>Nicolas Miannay</strong> <br>
+            Technical manager</p>
+          <a href="https://twitter.com/NicolasMiannay" target="_blank">
+            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 182.66667 150.66667"><defs id="defs6"><clipPath id="clipPath20" clipPathUnits="userSpaceOnUse"><path id="path18" d="m0 10.012h1366.9v1110.9h-1366.9z"/></clipPath></defs><g id="g10" transform="matrix(1.3333 0 0 -1.3333 0 150.67)"><g id="g12" transform="scale(.1)"><g id="g16" clip-path="url(#clipPath20)"><path id="path22" d="m1366.9 989.39c-50.27-22.309-104.33-37.387-161.05-44.18 57.89 34.723 102.34 89.679 123.28 155.15-54.18-32.15-114.18-55.47-178.09-68.04-51.13 54.49-124.02 88.55-204.68 88.55-154.89 0-280.43-125.55-280.43-280.43 0-21.988 2.457-43.398 7.258-63.91-233.08 11.68-439.72 123.36-578.04 293.01-24.141-41.4-37.969-89.567-37.969-140.97 0-97.308 49.489-183.13 124.76-233.44-45.969 1.437-89.218 14.058-127.03 35.078-0.043-1.18-0.043-2.348-0.043-3.52 0-135.9 96.68-249.22 224.96-275-23.512-6.41-48.281-9.8-73.86-9.8-18.089 0-35.628 1.711-52.781 5 35.711-111.41 139.26-192.5 262-194.77-96.058-75.23-216.96-120.04-348.36-120.04-22.621 0-44.961 1.332-66.918 3.91 124.16-79.568 271.55-125.98 429.94-125.98 515.82 0 797.86 427.31 797.86 797.93 0 12.153-0.28 24.223-0.79 36.25 54.77 39.571 102.31 88.95 139.93 145.2" fill="#55ACEE"/></g></g></g></svg>
+          </a>
+        </div><br>
+        <div class="clientblock">
+          <img src="images/team/rodolphe.jpg" alt="Rodolphe Vienco" class="img-circle">
+          <p><strong>Rodolphe Vienco</strong> <br>
+            Network administrator</p>
+          <a href="https://twitter.com/Rodyirandir" target="_blank">
+            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 182.66667 150.66667"><defs id="defs6"><clipPath id="clipPath20" clipPathUnits="userSpaceOnUse"><path id="path18" d="m0 10.012h1366.9v1110.9h-1366.9z"/></clipPath></defs><g id="g10" transform="matrix(1.3333 0 0 -1.3333 0 150.67)"><g id="g12" transform="scale(.1)"><g id="g16" clip-path="url(#clipPath20)"><path id="path22" d="m1366.9 989.39c-50.27-22.309-104.33-37.387-161.05-44.18 57.89 34.723 102.34 89.679 123.28 155.15-54.18-32.15-114.18-55.47-178.09-68.04-51.13 54.49-124.02 88.55-204.68 88.55-154.89 0-280.43-125.55-280.43-280.43 0-21.988 2.457-43.398 7.258-63.91-233.08 11.68-439.72 123.36-578.04 293.01-24.141-41.4-37.969-89.567-37.969-140.97 0-97.308 49.489-183.13 124.76-233.44-45.969 1.437-89.218 14.058-127.03 35.078-0.043-1.18-0.043-2.348-0.043-3.52 0-135.9 96.68-249.22 224.96-275-23.512-6.41-48.281-9.8-73.86-9.8-18.089 0-35.628 1.711-52.781 5 35.711-111.41 139.26-192.5 262-194.77-96.058-75.23-216.96-120.04-348.36-120.04-22.621 0-44.961 1.332-66.918 3.91 124.16-79.568 271.55-125.98 429.94-125.98 515.82 0 797.86 427.31 797.86 797.93 0 12.153-0.28 24.223-0.79 36.25 54.77 39.571 102.31 88.95 139.93 145.2" fill="#55ACEE"/></g></g></g></svg>
+          </a>
+        </div>
+        <div class="clientblock">
+          <img src="images/team/thibaut.jpg" alt="Thibaut Bourquinc" class="img-circle">
+          <p><strong>Thibaut Bourquin</strong> <br>
+            Project manager</p>
+        </div>
+    </section>
+  </div>
+  <!-- // End Team -->
 
-  		<!-- ==== SECTION DIVIDER2 -->
-  		<section  id="team" name="team" class="section-divider textdivider divider2" style="background-color:#333;">
-  			<div class="container">
-  				<h1>A USER INTERFACE , IT REMAINS A TEAM</h1>
-  				<hr>
-  				<p>To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take part in the conversation.</p>
-  			</div><!-- container -->
-  		</section><!-- section -->
+  <!-- Footer Starts -->
+  <div class="footercta" role="main">
+    <div class="container">
+      <!-- Hero Title -->
+      <h1>The Most Simple &amp; Yet <strong>Powerful Way</strong> <br>
+        to <strong>start</strong> with Docker</h1>
+      <div class="row">
+        <div class="col-md-12 breath text-center"> <a href="https://github.com/GMNQRT/whaler" class="btn btn-success btn-lg" target="_blank">View the GitHub project</a> </div>
+      </div>
+    </div>
+  </div>
 
-  		<!-- ==== TEAM MEMBERS ==== -->
-  		<div class="container">
-  			<br>
-  			<div class="row white centered">
-  				<h1 class="centered">MEET OUR AWESOME TEAM</h1>
-  				<hr>
-  				<br>
-  				<br>
-  				<div class="col-lg-2 centered col-lg-offset-1">
-  					<img class="img img-circle" src="assets/img/team/matthieu.jpg" height="120px" width="120px" alt="">
-  					<br>
-  					<h4><b>Matthieu Clor</b></h4>
-            <a href="https://github.com/clor-m" class="icon icon-github"></a>
-  				</div><!-- col-lg-3 -->
+  <!-- Footer Starts -->
+  <footer class="container">
+    <section class="row breath">
+      <div class="col-md-12 footerlinks"> <a href="#">About</a> <a href="#">Help</a> <a href="https://github.com/GMNQRT/whaler" target="_blank">GitHub</a> <a href="https://twitter.com/Whaler_io" target="_blank">Twitter</a> <a href="https://www.facebook.com/whaler.io/" target="_blank">Facebook</a> <a href="#">Contact</a> <a href="#">Terms</a>
+        <p>&copy; 2016 Whaler. All Rights Reserved</p>
+      </div>
+    </section>
+  </footer>
+  <!-- // Footer Ends -->
 
-  				<div class="col-lg-2 centered">
-  					<img class="img img-circle" src="assets/img/team/quentin.jpg" height="120px" width="120px" alt="">
-  					<br>
-  					<h4><b>Quentin BALCEREK</b></h4>
-            <a href="http://quentin-balcerek.fr/" class="icon icon-earth"></a>
-  					<a href="https://github.com/QuentinBALCEREK" class="icon icon-github"></a>
-            <a href="https://twitter.com/QuentinBALCEREK" class="icon icon-twitter"></a>
-            <a href="mailto:Quentin.BALCEREK@gmail.com" class="icon icon-envelop"></a>
-  				</div><!-- col-lg-3 -->
+  <!-- JS and analytics only. -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/easing.js"></script>
+  <script src="js/typer.js"></script>
 
-  				<div class="col-lg-2 centered">
-  					<img class="img img-circle" src="assets/img/team/nicolas.jpg" height="120px" width="120px" alt="">
-  					<br>
-  					<h4><b>Nicolas Miannay</b></h4>
-            <a href="http://nicolas-miannay.fr/" class="icon icon-earth"></a>
-            <a href="https://github.com/miannay-nicolas" class="icon icon-github"></a>
-  				</div><!-- col-lg-3 -->
-
-  				<div class="col-lg-2 centered">
-  					<img class="img img-circle" src="assets/img/team/rodolphe.jpg" height="120px" width="120px" alt="">
-  					<br>
-  					<h4><b>Rodolphe Vienco</b></h4>
-            <a href="https://twitter.com/Rodyirandir" class="icon icon-twitter"></a>
-  				</div><!-- col-lg-3 -->
-
-
-  				<div class="col-lg-2 centered">
-  					<img class="img img-circle" src="assets/img/team/thibaut.jpg" height="120px" width="120px" alt="">
-  					<br>
-  					<h4><b>Thibaut Bourquin</b></h4>
-            <a href="https://github.com/ThibautBqn" class="icon icon-github"></a>
-  				</div><!-- col-lg-3 -->
-
-  			</div><!-- row -->
-  		</div><!-- container -->
-
-  		<!-- ==== GREYWRAP ==== -->
-  		<div id="greywrap">
-  			<div class="container">
-  				<div class="row">
-  					<div class="col-lg-8 centered">
-  						<img class="img-responsive" src="assets/img/macbook.png" align="">
-  					</div>
-  					<div class="col-lg-4">
-  						<h2>We Are Hiring!</h2>
-  						<p>Do you want to be one of use? Sure you want, because we are an awesome team!. Here we work hard every day to craft an exeption interface.</p>
-  					</div>					
-  				</div><!-- row -->
-  			</div>
-  			<br>
-  			<br>
-  		</div><!-- greywrap -->
-
-				<!-- ==== SECTION DIVIDER4 ==== -->
-				<section  id="blog" name="blog" class="section-divider textdivider divider4" style="background-color:#333;">
-					<div class="container">
-						<h1>BETWEEN YOU AND US</h1>
-						<hr>
-						<p>Our interface is for you.</p>
-            <p>Tell us!</p>
-					</div><!-- container -->
-				</section><!-- section -->
-
-				<!-- ==== BLOG ==== -->
-				<div class="container">
-					<br>
-					<div class="row">
-						<br>
-						<h1 class="centered">WE ARE STORYTELLERS</h1>
-						<hr>
-						<br>
-						<br>
-					</div><!-- /row -->
-
-					<div class="row">
-						<div class="col-lg-offset-3 col-lg-6 blog-bg">
-							<div class="col-lg-4 centered">
-								<br>
-								<p><img class="img img-circle" src="assets/img/blog/sebastien_le_querec.jpg" width="60px" height="60px"></p>
-								<h4>Sébastien Le Querec</h4>
-								<h5>Published Nov 19.</h5>
-                <p>
-                  <a target="_blank" href="https://twitter.com/_seblog_" class="icon icon-twitter"></a>&nbsp;
-                  <a target="_blank" href="http://blog.lequerec.fr/" class="icon icon-earth"></a>&nbsp;
-                  <a target="_blank" href="https://fr.linkedin.com/in/s%C3%A9bastien-le-querec-b39aa34b" class="icon icon-link"></a>&nbsp;
-                </p>
-							</div>
-							<div class="col-lg-8 blog-content">
-								<h2>We Define Success</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-								<br>
-							</div>
-						</div><!-- /col -->
-					</div><!-- /row -->
-					<br>
-					<br>
-				</div><!-- /container -->
-
-
-				<!-- ==== SECTION DIVIDER6 ==== -->
-				<section class="section-divider textdivider divider6">
-					<div class="container">
-						<h1>CRAFTED IN PARIS, FRANCE.</h1>
-						<hr>
-						<p><a class="icon icon-twitter" target="_blank" href="https://twitter.com/Whaler_io"></a> | <a class="icon icon-facebook" target="_blank" href="https://www.facebook.com/whaler.io"></a></p>
-					</div><!-- container -->
-				</section><!-- section -->
-
-				<div class="container" id="contact" name="contact">
-					<div class="row">
-						<br>
-						<h1 class="centered">THANKS FOR VISITING US</h1>
-						<hr>
-						<br>
-						<br>
-						<div class="col-lg-6">
-							<h3>Contact Information</h3>
-              <div class="col-lg-6 blog-content">
-  							<p><span class="icon icon-home"></span> Paris<br/>
-  								<span class="icon icon-earth"></span> <a target="_blank" href="http://gmnqrt.github.io/whaler-site/"> WebSite</a> <br/>
-  								<span class="icon icon-twitter"></span> <a target="_blank" href="https://twitter.com/Whaler_io"> Whaler_io </a> <br/>
-  								<span class="icon icon-facebook"></span> <a target="_blank" href="https://www.facebook.com/whaler.io"> Whaler </a> <br/>
-  							</p>
-              </div><!-- col -->
-						</div><!-- col -->
-
-						<div class="col-lg-6">
-							<h3>Partner</h3>
-              <div class="col-lg-6">
-                <a target="_blank" href="http://www.etna-alternance.net/">
-                  <img src="assets/img/partenaire/etna.png" class="img-responsive" alt="ETNA partner">
-                </a>
-              </div>
-              <div class="col-lg-6 blog-content">
-                <p>
-                  <span class="icon icon-home"></span> 15, rue Maurice Grandcoing<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;94200 Ivry-sur-Seine<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;France<br/>
-                  <span class="icon icon-phone"></span> +33 (0) 1 44 08 00 22<br/>
-                  <span class="icon icon-drawer-2"></span> +33 (0) 1 44 08 00 02<br/>
-                </p>
-              </div>
-						</div><!-- col -->
-
-					</div><!-- row -->
-          <br>
-				</div><!-- container -->
-
-				<div id="footerwrap">
-					<div class="container">
-						<h4>&copy; 2015 GMNQRT - whaler &#124; Theme by <a href="http://blacktie.co">BlackTie.co</a></h4>
-					</div>
-				</div>
-<!-- &nbsp;&nbsp;&nbsp;<span class="icon icon-cancel-circle"></span> :  cancel-circle<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-puzzle"></span> :  puzzle<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-lamp"></span> :  lamp<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-wand"></span> :  wand<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-vector"></span> :  vector<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-menu"></span> :  menu<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-close"></span> :  close<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-twitter"></span> :  twitter<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-facebook"></span> :  facebook<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-vimeo"></span> :  vimeo<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-dribbble"></span> :  dribbble<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-mug"></span> :  mug<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-droplet"></span> :  droplet<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-puzzle-2"></span> :  puzzle-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-target"></span> :  target<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-dice"></span> :  dice<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-map"></span> :  map<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-location"></span> :  location<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-box-add"></span> :  box-add<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-phone"></span> :  phone<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-phone-2"></span> :  phone-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-phone-3"></span> :  phone-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tumblr"></span> :  tumblr<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-forrst"></span> :  forrst<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-feed"></span> :  feed<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pinterest"></span> :  pinterest<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-clock"></span> :  clock<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble"></span> :  bubble<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-screen"></span> :  screen<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-screen-2"></span> :  screen-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-laptop"></span> :  laptop<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-mobile"></span> :  mobile<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-mobile-2"></span> :  mobile-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tablet"></span> :  tablet<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tv"></span> :  tv<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pencil"></span> :  pencil<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-new-tab"></span> :  new-tab<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-quotes-left"></span> :  quotes-left<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-user"></span> :  user<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-2"></span> :  bubble-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-google-plus"></span> :  google-plus<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-instagram"></span> :  instagram<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-youtube"></span> :  youtube<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-flickr"></span> :  flickr<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-deviantart"></span> :  deviantart<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-github"></span> :  github<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-blogger"></span> :  blogger<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-soundcloud"></span> :  soundcloud<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-lastfm"></span> :  lastfm<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-file"></span> :  file<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-images"></span> :  images<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-right"></span> :  arrow-right<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-left"></span> :  arrow-left<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-3"></span> :  bubble-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-envelop"></span> :  envelop<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-compass"></span> :  compass<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-spinner"></span> :  spinner<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-spinner-2"></span> :  spinner-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-spinner-3"></span> :  spinner-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-play"></span> :  play<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pause"></span> :  pause<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-up-left"></span> :  arrow-up-left<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-right-2"></span> :  arrow-right-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-down-right"></span> :  arrow-down-right<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-down"></span> :  arrow-down<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-left-2"></span> :  arrow-left-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-up"></span> :  arrow-up<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-up-right"></span> :  arrow-up-right<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-down-left"></span> :  arrow-down-left<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-stopwatch"></span> :  stopwatch<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pushpin"></span> :  pushpin<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-compass-2"></span> :  compass-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-history"></span> :  history<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-clock-2"></span> :  clock-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-alarm"></span> :  alarm<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-earth"></span> :  earth<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-globe"></span> :  globe<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-target-2"></span> :  target-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-car"></span> :  car<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-truck"></span> :  truck<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-fire"></span> :  fire<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-lab"></span> :  lab<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-dumbbell"></span> :  dumbbell<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-rocket"></span> :  rocket<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-meter"></span> :  meter<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-dashboard"></span> :  dashboard<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-meter-fast"></span> :  meter-fast<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-hammer"></span> :  hammer<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-trophy"></span> :  trophy<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-trophy-star"></span> :  trophy-star<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-eye"></span> :  eye<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-eye-2"></span> :  eye-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-fan"></span> :  fan<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-sun"></span> :  sun<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-airplane"></span> :  airplane<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cogs"></span> :  cogs<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-anchor"></span> :  anchor<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-shield"></span> :  shield<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-lightning"></span> :  lightning<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-power"></span> :  power<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pyramid"></span> :  pyramid<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-road"></span> :  road<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-ladder"></span> :  ladder<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-hammer-2"></span> :  hammer-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cube"></span> :  cube<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cube-2"></span> :  cube-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-camera"></span> :  camera<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-piano"></span> :  piano<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-movie"></span> :  movie<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-connection"></span> :  connection<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-knight"></span> :  knight<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-diamonds"></span> :  diamonds<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-stack"></span> :  stack<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-folder-remove"></span> :  folder-remove<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-folder-open"></span> :  folder-open<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cart-checkout"></span> :  cart-checkout<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cart"></span> :  cart<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tag"></span> :  tag<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-basket"></span> :  basket<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-support"></span> :  support<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-phone-4"></span> :  phone-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-reply"></span> :  reply<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-flip"></span> :  flip<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-database"></span> :  database<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-database-2"></span> :  database-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-calendar"></span> :  calendar<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-calendar-2"></span> :  calendar-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-keyboard"></span> :  keyboard<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-user-plus"></span> :  user-plus<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-users"></span> :  users<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-forward"></span> :  bubble-forward<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-up"></span> :  bubble-up<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-last"></span> :  bubble-last<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-link"></span> :  bubble-link<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-check"></span> :  bubble-check<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-quote"></span> :  bubble-quote<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-lock"></span> :  lock<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-user-plus-2"></span> :  user-plus-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-user-minus"></span> :  user-minus<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-lock-2"></span> :  lock-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-paw"></span> :  paw<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-accessibility"></span> :  accessibility<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-eye-blocked"></span> :  eye-blocked<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-download"></span> :  download<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-smiley"></span> :  smiley<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-thumbs-down"></span> :  thumbs-down<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-yin-yang"></span> :  yin-yang<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-remove"></span> :  remove<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bars"></span> :  bars<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pie"></span> :  pie<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-plus-circle"></span> :  plus-circle<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-sad"></span> :  sad<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-shocked"></span> :  shocked<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-neutral"></span> :  neutral<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-checkmark"></span> :  checkmark<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume-low"></span> :  volume-low<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-down-2"></span> :  arrow-down-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume0"></span> :  volume0<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bookmarks"></span> :  bookmarks<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-left-3"></span> :  arrow-left-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-radio-unchecked"></span> :  radio-unchecked<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-sigma"></span> :  sigma<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-strikethrough"></span> :  strikethrough<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-backspace"></span> :  backspace<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-filter"></span> :  filter<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-up-right-2"></span> :  arrow-up-right-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-up-right-3"></span> :  arrow-up-right-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-file-zip"></span> :  file-zip<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-home"></span> :  home<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-blog"></span> :  blog<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-camera-2"></span> :  camera-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-file-2"></span> :  file-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-copy"></span> :  copy<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cart-plus"></span> :  cart-plus<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-music"></span> :  music<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-lock-3"></span> :  lock-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-zoom-out"></span> :  zoom-out<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-user-block"></span> :  user-block<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-search"></span> :  search<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-zoom-in"></span> :  zoom-in<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-notification"></span> :  bubble-notification<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-storage"></span> :  storage<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-grid"></span> :  grid<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-grid-2"></span> :  grid-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-signup"></span> :  signup<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-switch"></span> :  switch<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume-high"></span> :  volume-high<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume-medium"></span> :  volume-medium<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-arrow-left-4"></span> :  arrow-left-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-play-2"></span> :  play-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-point-up"></span> :  point-up<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-heart"></span> :  heart<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-heart-2"></span> :  heart-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-star"></span> :  star<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-star-2"></span> :  star-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-star-3"></span> :  star-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-star-4"></span> :  star-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-star-5"></span> :  star-5<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-star-6"></span> :  star-6<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-heart-3"></span> :  heart-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-weather-snow"></span> :  weather-snow<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-weather-lightning"></span> :  weather-lightning<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-heart-4"></span> :  heart-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-weather-rain"></span> :  weather-rain<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-windy"></span> :  windy<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-paypal"></span> :  paypal<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-paypal-2"></span> :  paypal-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-paypal-3"></span> :  paypal-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-yelp"></span> :  yelp<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-html5"></span> :  html5<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-css3"></span> :  css3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-html5-2"></span> :  html5-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-stumbleupon"></span> :  stumbleupon<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-stumbleupon-2"></span> :  stumbleupon-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-wordpress"></span> :  wordpress<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-joomla"></span> :  joomla<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-wordpress-2"></span> :  wordpress-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-github-2"></span> :  github-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-github-3"></span> :  github-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume-mute"></span> :  volume-mute<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume-mute-2"></span> :  volume-mute-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume-increase"></span> :  volume-increase<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-volume-decrease"></span> :  volume-decrease<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tongue"></span> :  tongue<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-question"></span> :  question<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-male"></span> :  male<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-medal"></span> :  medal<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-key"></span> :  key<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-contract"></span> :  contract<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubbles"></span> :  bubbles<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-file-3"></span> :  file-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-file-4"></span> :  file-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pencil-2"></span> :  pencil-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-headphones"></span> :  headphones<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-film"></span> :  film<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-film-2"></span> :  film-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-mic"></span> :  mic<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-radio"></span> :  radio<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-settings"></span> :  settings<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pie-2"></span> :  pie-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-inject"></span> :  inject<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-zoom-in-2"></span> :  zoom-in-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-notification-2"></span> :  bubble-notification-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-link"></span> :  link<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-brightness-contrast"></span> :  brightness-contrast<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-flag"></span> :  flag<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-upload"></span> :  upload<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-skull"></span> :  skull<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-leaf"></span> :  leaf<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-apple-fruit"></span> :  apple-fruit<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-food"></span> :  food<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cake"></span> :  cake<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-food-2"></span> :  food-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-gift"></span> :  gift<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-balloon"></span> :  balloon<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-medal-2"></span> :  medal-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-rating"></span> :  rating<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-rating-2"></span> :  rating-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-rating-3"></span> :  rating-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-steps"></span> :  steps<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-flower"></span> :  flower<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-remove-2"></span> :  remove-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-briefcase"></span> :  briefcase<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-briefcase-2"></span> :  briefcase-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-grid-3"></span> :  grid-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-sun-glasses"></span> :  sun-glasses<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tree"></span> :  tree<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tree-2"></span> :  tree-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-exit"></span> :  exit<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-evil"></span> :  evil<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-people"></span> :  people<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cool"></span> :  cool<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-thumbs-up"></span> :  thumbs-up<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bed"></span> :  bed<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bed-2"></span> :  bed-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-brightness-low"></span> :  brightness-low<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-heart-broken"></span> :  heart-broken<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-sun-2"></span> :  sun-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-umbrella"></span> :  umbrella<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-warning"></span> :  warning<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-move"></span> :  move<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-point-left"></span> :  point-left<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-point-down"></span> :  point-down<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-point-right"></span> :  point-right<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-question-2"></span> :  question-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-notification"></span> :  notification<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-radio-checked"></span> :  radio-checked<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-checkbox-partial"></span> :  checkbox-partial<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-checkbox-unchecked"></span> :  checkbox-unchecked<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-checkbox-checked"></span> :  checkbox-checked<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-command"></span> :  command<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-pen"></span> :  pen<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-quill"></span> :  quill<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-quill-2"></span> :  quill-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-wand-2"></span> :  wand-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-tools"></span> :  tools<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-eye-3"></span> :  eye-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-moon"></span> :  moon<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-contrast"></span> :  contrast<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-eye-4"></span> :  eye-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-eye-5"></span> :  eye-5<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-user-block-2"></span> :  user-block-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-paperclip"></span> :  bubble-paperclip<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-drawer"></span> :  drawer<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-drawer-2"></span> :  drawer-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-watch"></span> :  watch<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-archive"></span> :  archive<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cabinet"></span> :  cabinet<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-clock-3"></span> :  clock-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-clock-4"></span> :  clock-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-connection-2"></span> :  connection-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-new"></span> :  new<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-play-3"></span> :  play-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-marker"></span> :  marker<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-movie-2"></span> :  movie-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-podcast"></span> :  podcast<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-share"></span> :  share<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-scissors"></span> :  scissors<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-scissors-2"></span> :  scissors-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-subscript"></span> :  subscript<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-rulers"></span> :  rulers<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-filter-2"></span> :  filter-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-loop"></span> :  loop<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-loop-2"></span> :  loop-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-shuffle"></span> :  shuffle<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-shuffle-2"></span> :  shuffle-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-loop-3"></span> :  loop-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-loop-4"></span> :  loop-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-plus"></span> :  plus<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-enter"></span> :  enter<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-angry"></span> :  angry<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-attachment"></span> :  attachment<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-download-2"></span> :  download-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-upload-2"></span> :  upload-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-thumbs-up-2"></span> :  thumbs-up-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-glasses"></span> :  glasses<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-glasses-2"></span> :  glasses-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-stats-up"></span> :  stats-up<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bottle"></span> :  bottle<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bars-2"></span> :  bars-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-cog"></span> :  cog<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-bubble-dots"></span> :  bubble-dots<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-upload-3"></span> :  upload-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-download-3"></span> :  download-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-location-2"></span> :  location-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-location-3"></span> :  location-3<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-location-4"></span> :  location-4<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-envelop-2"></span> :  envelop-2<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-coin"></span> :  coin<br>
-&nbsp;&nbsp;&nbsp;<span class="icon icon-ticket"></span> :  ticket<br> -->
-				<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-				<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-				<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-				<script type="text/javascript" src="assets/js/retina.js"></script>
-				<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-				<script type="text/javascript" src="assets/js/smoothscroll.js"></script>
-				<script type="text/javascript" src="assets/js/jquery-func.js"></script>
-			</body>
-			</html>
+  <!-- Typer -->
+  <script>
+    $(function () {
+      $('[data-typer-targets]').typer();
+    });
+  </script>
+</body>
+</html>
