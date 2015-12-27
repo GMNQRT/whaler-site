@@ -182,6 +182,36 @@ a:focus {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: hidden;
+}
+.masthead .masthead-right {
+  background-image: url('../images/heroimg-1.jpg');
+  background-position: -115px -119px;
+}
+.masthead .masthead-left {
+  background-image: url('../images/heroimg-2.jpg');
+  background-position: left top;
+}
+.masthead .masthead-left, .masthead .masthead-right {
+  height: 400px;
+  top: 100px;
+  background-color: #ECF2F6;
+}
+.masthead .masthead-center iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0 -15px;
+}
+.masthead .masthead-center {
+  height: 500px;
+  padding: 0;
+  background-color: #1F1F1F;
+  background-image: url('../images/video.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  box-shadow: 0em 8em 20em #000;
+  z-index: 1;
 }
 /* Initial Subtle Animation*/
 
@@ -710,6 +740,9 @@ a:focus {
   .masthead {
     background-attachment: scroll;
   }
+  .masthead .masthead-center {
+    height: 250px;
+  }
 }
 /*=== v1.1 ===*/
 
@@ -799,12 +832,12 @@ a:focus {
 .navbar-brand {
   padding: 8px 15px;
 }
-#introvid {
+/*#introvid {
   position: absolute;
   bottom: 0;
   left: 50%;
   margin-left: -356px;
-}
+}*/
 .device {
   display: inline-block;
   position: relative;

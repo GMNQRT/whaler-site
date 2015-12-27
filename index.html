@@ -35,10 +35,13 @@
       <h1>The Most <span data-typer-targets="Easy,Effective,Friendly,Simple">Simple</span> and <strong>Powerful Way</strong> <br>
         to <strong>start</strong> with Docker</h1>
       <div class="row">
-        <div class="col-md-12">
-          <img src="images/web-app-banner.png" alt="Web App Banner" class="img-responsive">
-          <!-- <iframe id="introvid" width="696" height="518" src="https://www.youtube.com/embed/3JZ4pnNtyxQ" frameborder="0" allowfullscreen></iframe> -->
-        </div>
+        <!-- <div class="col-md-12"> -->
+          <div class="col-md-1 masthead-left hidden-xs hidden-sm"></div>
+          <div id="introvid" class="col-md-10 masthead-center">
+          </div>
+          <div class="col-md-1 masthead-right hidden-xs hidden-sm"></div>
+          <!-- <img src="images/web-app-banner.png" alt="Web App Banner" class="img-responsive"> -->
+        <!-- </div> -->
       </div>
     </div>
   </header>
@@ -312,6 +315,23 @@
   <script>
     $(function () {
       $('[data-typer-targets]').typer();
+
+      var title     = $("h1, .logo", "#top");
+      var height    = $("#top").height();
+      var scroll_cb = function(b) {
+        if (b <= height && $(window).width() > 768) {
+          title.css({
+            "margin-top": b / 3 * -1 + "px",
+            opacity: 1 - b / 200
+          });
+        }
+      };
+      // $('#introvid').append('<iframe src="https://player.vimeo.com/video/141966112?autoplay=1&color=00adef&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
+
+      scroll_cb($(this).scrollTop());
+      $(window).on("scroll", function() {
+        scroll_cb($(this).scrollTop());
+      });
     });
   </script>
 </body>
