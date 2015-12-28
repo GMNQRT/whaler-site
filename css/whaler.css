@@ -442,6 +442,7 @@ a:focus {
   padding-bottom: 100px;
   border-bottom: 1px solid #ECECEC;
   display: table;
+  table-layout: fixed;
 }
 .heroimg:last-of-type {
   margin-bottom: 50px;
