@@ -467,6 +467,13 @@ a:focus {
 .desc {
   font-size: 1.14em;
 }
+.desc.feat {
+  margin-left: 1.5em;
+}
+.desc.feat .glyphicon-ok {
+  color: #5CA2E0;
+  margin-left: -1.5em;
+}
 .heroimg img,
 .clientlogo img {
   max-width: 100%;
@@ -716,9 +723,9 @@ a:focus {
   .heroimg .hero-content {
     display: block;
   }
-	.desc {
-	  font-size: 1em;
-	}
+  .desc {
+    font-size: 1em;
+  }
 }
 @media (max-width: 767px) {
   h1 {
