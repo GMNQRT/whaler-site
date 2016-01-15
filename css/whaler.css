@@ -468,12 +468,26 @@ a:focus {
   font-size: 1.14em;
 }
 .desc.feat {
-  margin-left: 1.5em;
+  position: relative;
+  padding-left: 1.5em
 }
-.desc.feat .glyphicon-ok {
+.desc.feat:before {
+  margin-right: 1.5em;
   color: #5CA2E0;
-  margin-left: -1.5em;
+  content: "\e013";
+  font-size: 0.7em;
+  position: absolute;
+  top: 0.5em;
+  left: 0em;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 .heroimg img,
 .clientlogo img {
   max-width: 100%;
